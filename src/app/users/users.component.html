@@ -1,0 +1,74 @@
+<section class="section--center mdl-grid site-max-width">
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="img/portfolio1.jpg" border="0" alt="">
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Rocky Peak</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="img/portfolio2.jpg" border="0" alt="">
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Night Shadow</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="img/portfolio3.jpg" border="0" alt="">
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Sky Reach</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+    </div>
+  </div>
+</section>
+
+<p>
+  Displaying {{ users.length }} users.
+</p>
+
+<table>
+  <thead>
+  <tr>
+    <th data-field="name">Name</th>
+    <th data-field="name">Email</th>
+    <th data-field="name">Edit</th>
+    <th data-field="name">Delete</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <a [routerLink]="['/users', user.id]">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </td>
+      <td>
+        <a (click)="deleteUser(user)" href="">
+          <i class="material-icons">delete</i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large waves-effect waves-light green"
+     routerLink="/users/new">
+    <i class="material-icons">add</i>
+  </a>
+</div>
