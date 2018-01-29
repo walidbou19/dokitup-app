@@ -1,0 +1,56 @@
+{
+    "id": "5a20b673b502910d2800730a",
+    "name": "company #1",
+    "address": "address #1 Patch",
+    "companyType": {
+        "name": "societe compta"
+    },
+    "users": [
+        {
+            "id": "5a20d066b502910d28007317",
+            "firstName": "user firstName #1",
+            "lastName": "user lastName #1",
+            "email": "user#1@yahoo.fr",
+            "userRole": {
+                "name": "owner"
+            }
+        },
+        {
+            "id": "5a218835b502910d28007318",
+            "firstName": "user firstName #2",
+            "lastName": "user lastName #2",
+            "email": "user#2@yahoo.fr",
+            "userRole": {
+                "name": "owner"
+            }
+        },
+        {
+            "id": "5a2189e4b502910d28007319",
+            "firstName": "user firstName #3",
+            "lastName": "user lastName #3",
+            "email": "user#3@yahoo.fr",
+            "userRole": {
+                "name": "owner"
+            }
+        }
+    ],
+    "folders": [],
+    "createdBy": {
+		"firstName": "user firstName #3",
+		"lastName": "user lastName #3",
+		"email": "user#3@yahoo.fr",
+		"userRole": {
+			"name": "owner"
+		}
+	},
+    "createdAt": "2017-12-01T01:54:59+00:00",
+    "updatedBy": : {
+		"firstName": "user firstName #3",
+		"lastName": "user lastName #3",
+		"email": "user#3@yahoo.fr",
+		"userRole": {
+			"name": "owner"
+		}
+	},
+    "updatedAt": "2017-12-01T01:54:59+00:00"
+}

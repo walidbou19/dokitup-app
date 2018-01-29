@@ -1,0 +1,27 @@
+{
+    "id": "5a25fffeb50291098800685c",
+    "fileName": "Facture.pdf",
+    "fileUrl": "/web/files//ownerCompanyName_#1/2017/",
+    "boolViewer": false,
+    "boolOwner": false,
+    "folder": {
+        "name": "folder#1 :: ownerCompanyName #1",
+        "accesses": [
+            {
+                "accessType": {
+                    "name": "RU"
+                }
+            }
+        ]
+    },
+    "createdBy": {
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1",
+        "email": "ownerEmail#1@yahoo.fr"
+    },
+    "createdAt": "2017-12-05T02:10:06+00:00",
+    "updatedByOwner": null,
+    "updatedByOwnerAt": null,
+    "updatedByViewer": null,
+    "updatedByViewerAt": null
+}

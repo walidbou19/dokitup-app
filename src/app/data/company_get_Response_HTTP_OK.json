@@ -1,0 +1,45 @@
+{
+    "id": "5a245edcb5029113e0007a16",
+    "name": "accountantCompanyName #1",
+    "address": "accountantAddress #1",
+    "companyType": {
+        "name": "societe compta"
+    },
+    "users": [
+        {
+            "id": "5a245edcb5029113e0007a17",
+            "firstName": "accountantFirstName #1",
+            "lastName": "accountantLastName #1",
+            "email": "accountantEmail#1@yahoo.fr",
+            "userRole": {
+                "name": "accountant"
+            }
+        }
+    ],
+    "folders": [
+        {
+            "id": "5a25de9fb502910988006856",
+            "name": "folder#1 :: ownerCompanyName #1"
+        }
+    ],
+    "createdBy": {
+        "id": "5a20d066b502910d28007317",
+        "firstName": "admin FirstName Patch",
+        "lastName": "admin lastName",
+        "email": "admin@dokitup.com",
+        "userRole": {
+            "name": "admin"
+        }
+    },
+    "createdAt": "2017-12-03T20:30:20+00:00",
+    "updatedBy": {
+        "id": "5a2314e8b502910d28007340",
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1",
+        "email": "ownerEmail#1@yahoo.fr",
+        "userRole": {
+            "name": "owner"
+        }
+    },
+    "updatedAt": "2017-12-05T00:21:14+00:00"
+}

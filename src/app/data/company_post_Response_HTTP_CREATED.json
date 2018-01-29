@@ -1,0 +1,17 @@
+{
+    "id": "5a21b3bbb502910d2800731e",
+    "name": "company #3",
+    "address": "address #3",
+    "companyType": {
+        "name": "firm"
+    },
+    "createdBy": {
+		"firstName": "user firstName #3",
+		"lastName": "user lastName #3",
+		"email": "user#3@yahoo.fr",
+		"userRole": {
+			"name": "owner"
+		}
+	},
+    "createdAt": "2017-12-01T19:55:38+00:00"
+}

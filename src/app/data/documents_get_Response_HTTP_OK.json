@@ -1,0 +1,19 @@
+[
+    {
+        "id": "5a25fffeb50291098800685c",
+        "fileName": "Facture.pdf",
+        "fileUrl": "/web/files//ownerCompanyName_#1/2017/",
+        "boolViewer": true,
+        "boolOwner": false,
+        "folder": {
+            "name": "folder#1 :: ownerCompanyName #1",
+            "accesses": [
+                {
+                    "accessType": {
+                        "name": "RU"
+                    }
+                }
+            ]
+        }
+    }
+]

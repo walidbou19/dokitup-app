@@ -1,0 +1,57 @@
+{
+    "id": "5a246189b5029113e0007a19",
+    "name": "folder#2 :: ownerCompanyName #1",
+    "accesses": [
+        {
+            "id": "5a246189b5029113e0007a18",
+            "accessType": {
+                "name": "CRUD"
+            },
+            "companies": [
+                {
+                    "id": "5a2314e8b502910d2800733f",
+                    "name": "ownerCompanyName #1",
+                    "address": "ownerAddress #1",
+                    "companyType": {
+                        "name": "firm"
+                    }
+                }
+            ],
+            "createdBy": {},
+            "createdAt": "2017-12-03T20:41:45+00:00",
+            "updatedBy": null,
+            "updatedAt": null
+        },
+        {
+            "id": "5a247db4b5029113e0007a1b",
+            "accessType": {
+                "name": "RU"
+            },
+            "companies": [
+                {
+                    "id": "5a2314e8b502910d2800733f",
+                    "name": "ownerCompanyName #1",
+                    "address": "ownerAddress #1",
+                    "companyType": {
+                        "name": "firm"
+                    }
+                }
+            ],
+            "createdBy": {},
+            "createdAt": "2017-12-03T22:41:56+00:00",
+            "updatedBy": null,
+            "updatedAt": null
+        }
+    ],
+    "docs": [],
+    "createdBy": {
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1"
+    },
+    "createdAt": "2017-12-03T20:41:45+00:00",
+    "updatedBy": {
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1"
+    },
+    "updatedAt": "2017-12-03T22:41:45+00:00"
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "id": "5a245edcb5029113e0007a16",
+        "name": "accountantCompanyName #1",
+        "address": "accountantAddress #1",
+        "companyType": {
+            "name": "societe compta"
+        }
+    }
+]

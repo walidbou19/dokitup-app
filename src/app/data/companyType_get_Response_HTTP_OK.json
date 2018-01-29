@@ -1,0 +1,15 @@
+{
+	"id": "5a20987cb502910d28007300",
+	"name": "firm",
+	"createdBy": {
+		"firstName": "user firstName #3",
+		"lastName": "user lastName #3",
+		"email": "user#3@yahoo.fr",
+		"userRole": {
+			"name": "owner"
+		}
+	},
+	"createdAt": "2017-11-30T23:47:08+00:00",
+	"updatedBy": null,
+	"updatedAt": null
+}

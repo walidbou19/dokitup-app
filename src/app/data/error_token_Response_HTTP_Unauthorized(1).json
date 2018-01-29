@@ -1,0 +1,8 @@
+{
+    "code": 401,
+    "message": "Invalid authentication token"
+}
+{
+    "code": 401,
+    "message": "X-Auth-Token header is required"
+}

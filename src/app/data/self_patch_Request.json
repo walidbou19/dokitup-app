@@ -1,0 +1,7 @@
+{
+	"firstName": "admin FirstName Patch",
+    "lastName": "admin lastName Patch",
+    "email": "adminPatch@dokitup.com",
+    "userRole": "5a209534b502910d280072fd", 
+    "plainPassword": "azerty"
+}

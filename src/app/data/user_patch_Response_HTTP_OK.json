@@ -1,0 +1,66 @@
+{
+    "id": "5a233536b502910d2800734c",
+    "firstName": "ownerFirstName #6 Patch",
+    "lastName": "ownerLastName #6",
+    "email": "ownerEmail#6@yahoo.fr",
+    "plainPassword": "azertyPatch",  //Uniquement si modification du password sinon "plainPassword": null
+    "userRole": {
+        "name": "owner"
+    },
+    "createdBy": {
+        "id": "5a2314e8b502910d28007340",
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1",
+        "email": "ownerEmail#1@yahoo.fr",
+        "plainPassword": null,
+        "userRole": {
+            "name": "owner"
+        },
+        "createdBy": {
+            "id": "5a20d066b502910d28007317",
+            "firstName": "admin FirstName Patch",
+            "lastName": "admin lastName",
+            "email": "admin@dokitup.com",
+            "plainPassword": null,
+            "userRole": {
+                "name": "admin"
+            },
+            "createdBy": null,
+            "createdAt": "2017-12-01T03:45:42+00:00",
+            "updatedBy": null,
+            "updatedAt": "2017-12-02T18:35:36+00:00"
+        },
+        "createdAt": "2017-12-02T21:02:32+00:00",
+        "updatedBy": null,
+        "updatedAt": null
+    },
+    "createdAt": "2017-12-02T23:20:21+00:00",
+    "updatedBy": {
+        "id": "5a2314e8b502910d28007340",
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1",
+        "email": "ownerEmail#1@yahoo.fr",
+        "plainPassword": null,
+        "userRole": {
+            "name": "owner"
+        },
+        "createdBy": {
+            "id": "5a20d066b502910d28007317",
+            "firstName": "admin FirstName Patch",
+            "lastName": "admin lastName",
+            "email": "admin@dokitup.com",
+            "plainPassword": null,
+            "userRole": {
+                "name": "admin"
+            },
+            "createdBy": null,
+            "createdAt": "2017-12-01T03:45:42+00:00",
+            "updatedBy": null,
+            "updatedAt": "2017-12-02T18:35:36+00:00"
+        },
+        "createdAt": "2017-12-02T21:02:32+00:00",
+        "updatedBy": null,
+        "updatedAt": null
+    },
+    "updatedAt": "2017-12-02T23:28:23+00:00"
+}

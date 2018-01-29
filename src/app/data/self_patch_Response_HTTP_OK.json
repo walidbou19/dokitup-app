@@ -1,0 +1,14 @@
+{
+    "id": "5a20d066b502910d28007317",
+    "firstName": "admin FirstName Patch",
+    "lastName": "admin lastName",
+    "email": "admin@dokitup.com",
+    "userRole": {
+        "name": "admin"
+    },
+	"plainPassword": "azerty",
+    "createdBy": null,
+    "createdAt": "2017-12-01T03:45:42+00:00",
+    "updatedBy": null,
+    "updatedAt": "2017-12-02T18:35:36+00:00"
+}

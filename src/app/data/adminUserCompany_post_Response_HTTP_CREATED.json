@@ -1,0 +1,20 @@
+{
+    "id": "5a21f656b502910d28007339",
+    "firstName": "userFirstName #1",
+    "lastName": "userLastName #1",
+    "email": "userEmail#1@yahoo.fr",
+    "plainPassword": "userPlainPassword#1",
+    "userRole": {
+        "name": "owner"
+    },
+    "companies": [
+        {
+            "id": "5a21f656b502910d28007338",
+            "name": "companyName #1",
+            "address": "address #3",
+            "companyType": {
+                "name": "firm"
+            }
+        }
+    ]
+}

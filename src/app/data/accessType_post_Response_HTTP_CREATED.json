@@ -1,0 +1,14 @@
+{
+    "id": "5a2347d6b502910d2800734e",
+    "name": "RU",
+    "createdBy": {
+        "id": "5a2314e8b502910d28007340",
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1",
+        "email": "ownerEmail#1@yahoo.fr",
+        "userRole": {}
+    },
+    "createdAt": "2017-12-03T00:39:50+00:00",
+    "updatedBy": null,
+    "updatedAt": null
+}

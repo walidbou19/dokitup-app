@@ -1,0 +1,9 @@
+{
+    "code": 401,
+    "message": "Extension not permited"
+}
+
+{
+    "code": 401,
+    "message": "Date format is not valid :: expected YYYY"
+}

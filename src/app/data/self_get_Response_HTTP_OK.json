@@ -1,0 +1,13 @@
+{
+    "id": "5a20d066b502910d28007317",
+    "firstName": "admin FirstName",
+    "lastName": "admin lastName",
+    "email": "admin@dokitup.com",
+    "userRole": {
+        "name": "owner"
+    },
+    "createdBy": null,
+    "createdAt": "2017-12-01T03:45:42+00:00",
+    "updatedBy": null,
+    "updatedAt": null
+}

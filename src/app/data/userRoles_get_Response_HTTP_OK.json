@@ -1,0 +1,47 @@
+[
+    {
+        "id": "5a209534b502910d280072fd",
+        "name": "admin",
+        "createdBy": {
+			"firstName": "user firstName #3",
+			"lastName": "user lastName #3",
+			"email": "user#3@yahoo.fr",
+			"userRole": {
+				"name": "owner"
+			}
+		},
+        "createdAt": "2017-11-30T23:33:08+00:00",
+        "updatedBy": null,
+        "updatedAt": null
+    },
+    {
+        "id": "5a20953db502910d280072fe",
+        "name": "owner",
+        "createdBy":{
+			"firstName": "user firstName #3",
+			"lastName": "user lastName #3",
+			"email": "user#3@yahoo.fr",
+			"userRole": {
+				"name": "owner"
+			}
+		},
+        "createdAt": "2017-11-30T23:33:16+00:00",
+        "updatedBy": null,
+        "updatedAt": null
+    },
+    {
+        "id": "5a209553b502910d280072ff",
+        "name": "accountant",
+        "createdBy": {
+			"firstName": "user firstName #3",
+			"lastName": "user lastName #3",
+			"email": "user#3@yahoo.fr",
+			"userRole": {
+				"name": "owner"
+			}
+		},
+        "createdAt": "2017-11-30T23:33:38+00:00",
+        "updatedBy": null,
+        "updatedAt": null
+    }
+]

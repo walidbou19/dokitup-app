@@ -1,0 +1,21 @@
+{
+    "id": "5a25fffeb50291098800685c",
+    "fileName": "Facture.pdf",
+    "fileUrl": "/web/files//ownerCompanyName_#1/2017/",
+    "folder": {
+        "name": "folder#1 :: ownerCompanyName #1",
+        "companies": [
+            {
+                "name": "ownerCompanyName #1"
+            },
+            {
+                "name": "accountantCompanyName #1"
+            }
+        ]
+    },
+    "createdBy": {
+        "firstName": "ownerFirstName #1",
+        "lastName": "ownerLastName #1"
+    },
+    "createdAt": "2017-12-05T02:10:06+00:00"
+}

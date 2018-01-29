@@ -1,0 +1,11 @@
+[
+    {
+        "id": "5a245edcb5029113e0007a17",
+        "firstName": "accountantFirstName #1",
+        "lastName": "accountantLastName #1",
+        "email": "accountantEmail#1@yahoo.fr",
+        "userRole": {
+            "name": "accountant"
+        }
+    }
+]

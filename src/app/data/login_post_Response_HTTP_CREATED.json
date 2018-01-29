@@ -1,0 +1,14 @@
+{
+    "id": "5a219119b502910d2800731a",
+    "value": "cLTPIxOt1Z+8KltOMz9wMYKzJofFjPlry8VaJ+TO0EngFyjByD3z57iKh9+6pueNK/U=",
+    "createdAt": "2017-12-01T17:27:53+00:00",
+    "user": {
+        "id": "5a2189e4b502910d28007319",
+        "firstName": "user firstName #3",
+        "lastName": "user lastName #3",
+        "email": "user#3@yahoo.fr",
+        "userRole": {
+            "name": "owner"
+        }
+    }
+}
