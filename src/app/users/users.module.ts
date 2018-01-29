@@ -8,13 +8,16 @@ import { UsersComponent } from './users.component';
 import { UsersService } from './shared/users.service';
 import { UserFormComponent } from './user-form/user-form.component';
 
+import { NavBarModule } from '../nav-bar/nav-bar.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    HttpModule
+    HttpModule,
+    NavBarModule
   ],
   declarations: [
     UsersComponent,

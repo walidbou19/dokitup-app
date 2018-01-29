@@ -1,7 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+
+
+
+import { AlertComponent } from './_directives/index';
+import { AuthGuard } from './_guards/index';
+import { JwtInterceptor } from './_helpers/index';
+import { AlertService, AuthenticationService, UserService } from './_services/index';
 
 import { MaterializeModule } from 'angular2-materialize';
 
@@ -13,23 +21,38 @@ import { routing } from './app.routing';
 import { usersRouting } from './users/users.routing';
 import { UsersModule } from './users/users.module';
 
+import { LoginComponent } from './login/index';
+
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     MaterializeModule,
+    ReactiveFormsModule,
     UsersModule,
     usersRouting,
     routing
   ],
-  providers: [],
+  providers: [
+      AuthGuard,
+      AlertService,
+      AuthenticationService,
+      UserService,
+      {
+          provide: HTTP_INTERCEPTORS,
+          useClass: JwtInterceptor,
+          multi: true
+      }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
