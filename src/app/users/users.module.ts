@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { UsersComponent } from './users.component';
 import { UsersService } from './shared/users.service';
 import { UserFormComponent } from './user-form/user-form.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 import { NavBarModule } from '../nav-bar/nav-bar.module';
 
@@ -21,7 +22,8 @@ import { NavBarModule } from '../nav-bar/nav-bar.module';
   ],
   declarations: [
     UsersComponent,
-    UserFormComponent
+    UserFormComponent,
+    UserDetailComponent
   ],
   exports: [
     UsersComponent

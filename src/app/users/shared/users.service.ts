@@ -9,7 +9,9 @@ import { Observable } from 'rxjs/Rx';
 @Injectable()
 export class UsersService {
 
-  private url: string = 'http://jsonplaceholder.typicode.com/users';
+  // private url: string = 'http://jsonplaceholder.typicode.com/users';
+
+  private url: string = '/assets/data/folder_get_Response_HTTP_OK.json';
 
   constructor(private http: Http) { }
 

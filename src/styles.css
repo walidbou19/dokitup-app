@@ -156,7 +156,9 @@ html {
 
 body {
     width: 100%;
-    min-height: 100%
+    min-height: 100%;
+    background: #f8f8f8;
+
 }
 
 main {
@@ -7642,4 +7644,16 @@ iframe.heightSet {
 }
 .mdl-card{
     min-height: 100%;
+}
+
+.alert{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+.dropdown-right{
+    text-align: right;
+    float: right;
+    font-size: 20px;
 }
