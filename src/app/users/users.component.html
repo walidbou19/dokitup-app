@@ -1,23 +1,23 @@
 <app-nav-bar></app-nav-bar>
 <div class="container">
   <section class="section--center mdl-grid site-max-width">
-    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" *ngFor="let user of users" >
+    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" *ngFor="let company of allCompanies" >
 
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
-          <h5>{{ user.id }}</h5>
-          {{ user.email }}
+          <h5>{{ company.id }}</h5>
+          {{ company.address }}
         </div>
         <div class="mdl-cell mdl-cell--6-col">
           <img class="article-image" src="./assets/img/logotype.png" border="0" alt="">
         </div>
       </div>
-      <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--accent" [routerLink]="['/users', user.id]" data-upgraded=",MaterialButton,MaterialRipple">View</a>
+      <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--accent" [routerLink]="['/users', company.id]" data-upgraded=",MaterialButton,MaterialRipple">View</a>
     </div>
   </section>
 
   <p>
-    Displaying {{ users.length }} users.
+    Displaying {{ allCompanies.length }} users.
   </p>
 </div>
 

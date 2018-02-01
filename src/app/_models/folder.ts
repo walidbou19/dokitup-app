@@ -1,10 +1,11 @@
 ﻿import {User} from './user';
+import {Accesses} from './accesses';
 import {Document} from './document';
 
 export class Folder {
     public id: string;
     public name: string;
-    public accesses: any[];
+    public accesses: Accesses[];
     public docs: Document[];
     public createdBy: User;
     public createdAt: Date;
@@ -12,7 +13,7 @@ export class Folder {
     public updatedAt: Date;
 
     public constructor(id: string, name: string,
-                       accesses: any[], docs: Document[],
+                       accesses: Accesses[], docs: Document[],
                        createdBy: User, createdAt: Date,
                        updatedBy: User, updatedAt: Date) {
         this.id = id;
@@ -30,6 +31,9 @@ export class Folder {
     }
     public addDocument(doc: Document) {
         this.docs.push(doc);
+    }
+    public addAccess(access: Accesses) {
+        this.accesses.push(access);
     }
     public setDocuments(docs: Document[]) {
         this.docs = docs;
