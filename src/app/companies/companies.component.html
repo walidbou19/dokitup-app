@@ -1,0 +1,57 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <section class="section--center mdl-grid site-max-width">
+    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" *ngFor="let company of allCompanies" >
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+          <img class="article-image" src="./assets/img/logotype.png" border="0" alt="">
+          <p><strong>SIRET: </strong>{{ company.id }}</p>
+          <p><strong>NAME: </strong>{{ company.name }}</p>
+          <p><strong>ADRESSE: </strong>{{ company.address }}</p>
+        </div>
+      </div>
+      <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--accent" [routerLink]="['/companies', company.id]" data-upgraded=",MaterialButton,MaterialRipple">View</a>
+    </div>
+  </section>
+
+  <p>
+    Displaying {{ allCompanies.length }} users.
+  </p>
+</div>
+
+
+<!--<table>
+  <thead>
+  <tr>
+    <th data-field="name">Name</th>
+    <th data-field="name">Email</th>
+    <th data-field="name">Edit</th>
+    <th data-field="name">Delete</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <a [routerLink]="['/users', user.id]">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </td>
+      <td>
+        <a (click)="deleteUser(user)" href="">
+          <i class="material-icons">delete</i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>-->
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large waves-effect waves-light green"
+     routerLink="/users/new">
+    <i class="material-icons">add</i>
+  </a>
+</div>

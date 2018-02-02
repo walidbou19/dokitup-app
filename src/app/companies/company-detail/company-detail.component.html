@@ -1,0 +1,15 @@
+<app-nav-bar></app-nav-bar>
+<h5>{{ title }}</h5>
+<div class="container">
+
+  <section class="section--center site-max-width">
+    <div class="mdl-shadow--4dp "  >
+        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding " *ngIf="company != undefined">
+          <img class="article-image" src="./assets/img/logotype.png" border="0" alt="">
+          <p><strong>SIRET: </strong>{{ company.id }}</p>
+          <p><strong>NAME: </strong>{{ company.name }}</p>
+          <p><strong>ADRESSE: </strong>{{ company.address }}</p>
+        </div>
+      </div>
+  </section>
+</div>

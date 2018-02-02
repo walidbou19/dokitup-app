@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { routing } from './app.routing';
 import { UsersModule } from './users/users.module';
+import { CompaniesModule } from './companies/companies.module';
 import { NavBarModule } from './nav-bar/nav-bar.module';
 import { LoginComponent } from './login/index';
 
@@ -41,6 +42,7 @@ import { MaterialModule } from './material.module';
     MaterializeModule,
     ReactiveFormsModule,
     UsersModule,
+    CompaniesModule,
     routing,
     NavBarModule,
     NoopAnimationsModule,
