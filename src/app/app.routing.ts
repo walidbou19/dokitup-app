@@ -10,6 +10,7 @@ import { UsersComponent } from './users/users.component';
 import { CompaniesComponent } from './companies/companies.component';
 import {UserFormComponent} from './users/user-form/user-form.component';
 import {CompaniesDetailComponent} from './companies/company-detail/company-detail.component';
+import {ListUsersComponent} from './companies/list-users/list-users.component';
 
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component: CompaniesComponent, canActivate: [AuthGuard] },
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'users/new', component: UserFormComponent},
   { path: 'users/:id', component: UserFormComponent, canActivate: [AuthGuard]},
   { path: 'companies/:id', component: CompaniesDetailComponent, canActivate: [AuthGuard]},
+  { path: 'list-users/:id', component: ListUsersComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent},
   { path: '**', redirectTo: 'not-found' }
 ];

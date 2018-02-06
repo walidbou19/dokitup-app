@@ -1,0 +1,33 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container detail" *ngIf="company != undefined">
+    <button mz-button class="ng-tns-c12-3 btn waves-effect waves-light" (click)="goBack()">
+        Retour
+    </button>
+    <mz-card class=" "
+            [hoverable]="true">
+        <mz-card-title>
+            Liste des utilisateurs:
+        </mz-card-title>
+        <mz-card-content>
+            <table>
+                <tr>
+                    <th>Utilisateur</th>
+                    <th>Cabinet</th>
+                    <th>Actions</th>
+                </tr>
+                <tr id="user-{{user.id}}" class="" *ngFor="let user of company.users" >
+                    <td>
+                        {{user.firstName}}
+                    </td>
+                    <td>
+                        {{company.name}}
+                    </td>
+                    <td>
+                        <i mz-icon-mdi class="red-text waves-effect waves-light" [align]="'center'" [icon]="'delete-circle'" [size]="'24px'"  ></i>
+                    </td>
+                </tr>
+            </table>
+        </mz-card-content>
+    </mz-card>
+</div>

@@ -109,6 +109,24 @@
                                 "userRole": {
                                     "name": "accountant"
                                 }
+                            },
+                            {
+                                "id": "2",
+                                "firstName": "ownerFirstName #2",
+                                "lastName": "ownerLastName #2",
+                                "email": "ownerEmail#2@yahoo.fr",
+                                "userRole": {
+                                    "name": "owner"
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "firstName": "ownerFirstName #3",
+                                "lastName": "ownerLastName #3",
+                                "email": "ownerEmail#3@yahoo.fr",
+                                "userRole": {
+                                    "name": "owner"
+                                }
                             }
                         ]
                     }

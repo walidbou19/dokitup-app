@@ -20,16 +20,18 @@ export class CompaniesComponent implements OnInit {
   constructor(private companiesService: CompaniesService) {}
 
   ngOnInit() {
-    this.companiesService.getData()
-        .subscribe(
-            data => {
-                data.forEach(folder => {
-                    this.folders.push(ObjectRetriever.getObjectFromJSON(folder, 'folder'));
-                });
-                console.log(this.folders);
-                this.allCompanies = Companies.allCompanies;
-            },
-            error => {});
+          this.companiesService.getData()
+              .subscribe(
+                  data => {
+                      if (Companies.allCompanies.length === 0) {
+                          data.forEach(folder => {
+                              this.folders.push(ObjectRetriever.getObjectFromJSON(folder, 'folder'));
+                          });
+                      }
+                      console.log(this.folders);
+                      this.allCompanies = Companies.allCompanies;
+                  },
+                  error => {});
   }
 /*
   deleteUser(user){

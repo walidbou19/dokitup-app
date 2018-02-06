@@ -2,9 +2,11 @@
 <div class="container">
   <section class="section--center mdl-grid site-max-width">
     <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" *ngFor="let company of allCompanies" >
-
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+          <div class="card-action">
+              <i mz-icon-mdi [align]="'right'" [icon]="'account-multiple'" [size]="'24px'" [routerLink]="['/list-users', company.id]"  ></i>
+          </div>
           <img class="article-image" src="./assets/img/logotype.png" border="0" alt="">
           <p><strong>SIRET: </strong>{{ company.id }}</p>
           <p><strong>NAME: </strong>{{ company.name }}</p>

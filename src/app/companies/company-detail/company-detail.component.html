@@ -1,7 +1,10 @@
 <app-nav-bar></app-nav-bar>
-<h5>{{ title }}</h5>
-<div class="container">
 
+<div class="container detail">
+    <button mz-button class="ng-tns-c12-3 btn waves-effect waves-light" (click)="goBack()">
+        Retour
+    </button>
+    <h5>{{ title }}</h5>
   <section class="section--center site-max-width">
     <div class="mdl-shadow--4dp "  >
         <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding " *ngIf="company != undefined">

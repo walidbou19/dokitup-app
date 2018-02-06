@@ -8,8 +8,8 @@ import { MaterialModule } from '../material.module';
 @NgModule({
   imports: [
     CommonModule,
-      RouterModule,
-      MaterialModule
+    RouterModule,
+    MaterialModule
   ],
     declarations: [
         NavBarComponent

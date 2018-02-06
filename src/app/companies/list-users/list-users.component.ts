@@ -6,21 +6,19 @@ import { Location } from '@angular/common';
 import { User } from '../../_models/user';
 import { Companies } from '../../_models/companies';
 import { CompaniesService } from '../shared/companies.service';
-import { BasicValidators } from '../../shared/basic-validators';
+// import { BasicValidators } from '../../shared/basic-validators';
 import {ObjectRetriever} from '../../_models/objectRetriever';
 
 @Component({
-  selector: 'app-company-detail',
-  templateUrl: './company-detail.component.html',
-  styleUrls: ['./company-detail.component.css']
+  selector: 'app-list-users',
+  templateUrl: './list-users.component.html',
+  styleUrls: ['./list-users.component.css']
 })
 
-export class CompaniesDetailComponent implements OnInit {
-
+export class ListUsersComponent implements OnInit {
   title: string;
   user: User;
   company: Companies;
-
 
   constructor(private companiesService: CompaniesService, private router: Router, private route: ActivatedRoute, private location: Location) {}
 
@@ -28,6 +26,7 @@ export class CompaniesDetailComponent implements OnInit {
     this.companiesService.getData()
         .subscribe(
             data => {
+                console.log(data);
                 if (Companies.allCompanies.length === 0) {
                     data.forEach(folder => {
                         ObjectRetriever.getObjectFromJSON(folder, 'folder');
@@ -47,26 +46,12 @@ export class CompaniesDetailComponent implements OnInit {
                     } else {
                         this.company = foundCompanies[0];
                     }
-                    console.log(this.company.users);
+                    console.log(this.company);
                 });
             },
             error => {});
   }
-
     goBack(): void {
-        this.location.back();
-    }
-
-  /*save() {
-    var result,
-        userValue = this.form.value;
-
-    if (userValue.id){
-      result = this.usersService.updateUser(userValue);
-    } else {
-      result = this.usersService.addUser(userValue);
-    }
-
-    result.subscribe(data => this.router.navigate(['users']));
-  }*/
+         this.location.back();
+     }
 }
