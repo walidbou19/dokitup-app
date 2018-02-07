@@ -5,6 +5,7 @@
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
           <div class="card-action">
+            <i mz-icon-mdi [align]="'right'" [icon]="'table-edit'" [size]="'24px'" [routerLink]="['/company-form', company.id]"  ></i>
               <i mz-icon-mdi [align]="'right'" [icon]="'account-multiple'" [size]="'24px'" [routerLink]="['/list-users', company.id]"  ></i>
           </div>
           <img class="article-image" src="./assets/img/logotype.png" border="0" alt="">
@@ -13,12 +14,14 @@
           <p><strong>ADRESSE: </strong>{{ company.address }}</p>
         </div>
       </div>
-      <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--accent" [routerLink]="['/companies', company.id]" data-upgraded=",MaterialButton,MaterialRipple">View</a>
+      <button mz-button class="medium" [large]="false" [routerLink]="['/company', company.id]" >
+        Voir Espace <i mz-icon-mdi [align]="'right'" [icon]="'add'" [size]="'24px'"></i>
+      </button>
     </div>
   </section>
 
   <p>
-    Displaying {{ allCompanies.length }} users.
+    Displaying {{ allCompanies.length }} Companies.
   </p>
 </div>
 

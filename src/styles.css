@@ -7657,3 +7657,24 @@ iframe.heightSet {
     float: right;
     font-size: 20px;
 }
+
+nav{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+nav a{
+    color: #000000 !important;
+}
+
+.la-ball-clip-rotate-multiple{
+    color: #2196F3 !important;
+}
+
+.mdl-grid{
+    margin: 0;
+}
+
+.medium{
+    max-width: 180px;
+    margin: 10px auto;
+}

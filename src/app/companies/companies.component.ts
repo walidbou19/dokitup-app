@@ -5,6 +5,7 @@ import {Companies} from '../_models/companies';
 import {Folder} from '../_models/folder';
 import {ObjectRetriever} from '../_models/objectRetriever';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 
 @Component({
   selector: 'app-companies',
@@ -17,9 +18,10 @@ export class CompaniesComponent implements OnInit {
   private users: User[] = [];
   private allCompanies: Companies[] = [];
 
-  constructor(private companiesService: CompaniesService) {}
+  constructor(private companiesService: CompaniesService, private spinnerService: Ng4LoadingSpinnerService) {}
 
   ngOnInit() {
+      this.spinnerService.show();
           this.companiesService.getData()
               .subscribe(
                   data => {
@@ -30,6 +32,7 @@ export class CompaniesComponent implements OnInit {
                       }
                       console.log(this.folders);
                       this.allCompanies = Companies.allCompanies;
+                      this.spinnerService.hide();
                   },
                   error => {});
   }

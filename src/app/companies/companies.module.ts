@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { CompaniesComponent } from './companies.component';
 import { CompaniesService } from './shared/companies.service';
-//import { UserFormComponent } from './user-form/user-form.component';
+import { CompaniesFormComponent } from './company-form/company-form.component';
 import { CompaniesDetailComponent } from './company-detail/company-detail.component';
 import { ListUsersComponent } from './list-users/list-users.component';
 import { NavBarModule } from '../nav-bar/nav-bar.module';
@@ -26,6 +26,7 @@ import { MaterialModule } from '../material.module';
   declarations: [
     CompaniesComponent,
     CompaniesDetailComponent,
+    CompaniesFormComponent,
     ListUsersComponent
   ],
   exports: [

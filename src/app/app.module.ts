@@ -4,7 +4,7 @@ import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
-
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 
 import { AlertComponent } from './_directives/index';
 import { AuthGuard } from './_guards/index';
@@ -46,7 +46,8 @@ import { MaterialModule } from './material.module';
     routing,
     NavBarModule,
     NoopAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    Ng4LoadingSpinnerModule
   ],
   providers: [
       AuthGuard,

@@ -2,6 +2,7 @@
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { AlertService, AuthenticationService } from '../_services/index';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 
 @Component({
     moduleId: module.id.toString(),
@@ -18,7 +19,8 @@ export class LoginComponent implements OnInit {
         private route: ActivatedRoute,
         private router: Router,
         private authenticationService: AuthenticationService,
-        private alertService: AlertService) { }
+        private alertService: AlertService,
+        private spinnerService: Ng4LoadingSpinnerService) { }
 
     ngOnInit() {
         // reset login status
@@ -29,11 +31,11 @@ export class LoginComponent implements OnInit {
     }
 
     login() {
-        this.loading = true;
+        this.spinnerService.show();
         this.authenticationService.login(this.model.username, this.model.password)
             .subscribe(
                 data => {
-                    this.loading = false;
+                    this.spinnerService.hide();
                     if (data !== false) {
                         localStorage.setItem('currentUser', JSON.stringify({'username': data.username, 'firstname': data.firstname}) );
                         this.router.navigate([this.returnUrl]);
@@ -43,7 +45,7 @@ export class LoginComponent implements OnInit {
                 },
                 error => {
                     this.alertService.error(error);
-                    this.loading = false;
+                    this.spinnerService.hide();
                 });
     }
 }
