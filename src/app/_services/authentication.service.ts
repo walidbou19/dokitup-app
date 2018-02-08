@@ -1,5 +1,6 @@
 ﻿import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {Location} from './location';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
@@ -8,8 +9,10 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class AuthenticationService {
-    private url: string = '/assets/data/login_post_Request.json';
-    constructor(private http: HttpClient) { }
+    private url: string = Location.getAuthenticationJSON();
+    constructor(private http: HttpClient) {
+        // console.log(this.url);
+    }
     login(username: string, password: string) {
         return this.http.get<any>(this.url)
             .map(user => {

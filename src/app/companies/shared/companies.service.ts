@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import {Companies} from '../../_models/companies';
+import {Location} from '../../_services/location';
+
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
@@ -12,7 +14,7 @@ export class CompaniesService {
 
   // private url: string = 'http://jsonplaceholder.typicode.com/companys';
 
-  private url: string = '/assets/data/folder_get_Response_HTTP_OK.json';
+  private url: string = Location.getCompanyJSON();
 
   constructor(private http: Http) { }
 
