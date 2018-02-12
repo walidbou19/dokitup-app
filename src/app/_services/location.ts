@@ -1,7 +1,7 @@
 import { environment } from '../../environments/environment';
 
 export class Location {
-    private static baseHref: string = (environment.production) ? '/symfony/front' : '';
+    private static baseHref: string = (environment.production) ? '/dokitup' : '';
     private static relativePath: string = '/assets/data/';
 
     private static authJSON: string = Location.relativePath + 'login_post_Request.json';

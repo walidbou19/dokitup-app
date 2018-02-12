@@ -1,13 +1,13 @@
 <app-nav-bar></app-nav-bar>
 
-<div class="container detail">
+<div class="container detail" *ngIf="company != undefined">
     <button mz-button class="ng-tns-c12-3 btn waves-effect waves-light" (click)="goBack()">
         Retour
     </button>
     <h5>{{ title }}</h5>
   <section class="section--center site-max-width">
     <div class="mdl-shadow--4dp "  >
-        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding " *ngIf="company != undefined">
+        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding " >
           <img class="article-image" src="./assets/img/logotype.png" border="0" alt="">
           <p><strong>SIRET: </strong>{{ company.id }}</p>
           <p><strong>NAME: </strong>{{ company.name }}</p>
@@ -15,4 +15,13 @@
         </div>
       </div>
   </section>
+
+    <section class="section--center site-max-width">
+        <div class="mdl-shadow--4dp "  >
+            <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding " >
+                <h5>Documents: </h5>
+            </div>
+        </div>
+    </section>
+
 </div>
