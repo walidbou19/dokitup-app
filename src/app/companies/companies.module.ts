@@ -9,6 +9,7 @@ import { CompaniesService } from './shared/companies.service';
 import { CompaniesFormComponent } from './company-form/company-form.component';
 import { CompaniesDetailComponent } from './company-detail/company-detail.component';
 import { ListUsersComponent } from './list-users/list-users.component';
+import { ListDocumentsComponent } from './list-documents/list-documents.component';
 import { NavBarModule } from '../nav-bar/nav-bar.module';
 
 import { MaterialModule } from '../material.module';
@@ -27,7 +28,8 @@ import { MaterialModule } from '../material.module';
     CompaniesComponent,
     CompaniesDetailComponent,
     CompaniesFormComponent,
-    ListUsersComponent
+    ListUsersComponent,
+    ListDocumentsComponent
   ],
   exports: [
     CompaniesComponent

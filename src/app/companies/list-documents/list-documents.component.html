@@ -1,0 +1,49 @@
+<section class="section--center mdl-grid site-max-width mdl-shadow--4dp">
+        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone " >
+            <strong>Rechercher:</strong>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" >
+            <mz-select-container>
+                <select mz-select id="options-select" [placeholder]="'Année'">
+                        <option class="left">2000</option>
+                        <option class="left ">2001</option>
+                </select>
+            </mz-select-container>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" >
+            <mz-select-container>
+                <select mz-select id="options-select2" [placeholder]="'Moi'">
+                        <option class="left">Janvier</option>
+                        <option class="left ">Févirier</option>
+                </select>
+            </mz-select-container>
+        </div>
+    <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" >
+        <mz-select-container>
+            <select mz-select id="options-select3" [placeholder]="'Catégorie'">
+                    <option class="left">Janvier</option>
+                    <option class="left ">Févirier</option>
+            </select>
+        </mz-select-container>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" >
+        <mz-input-container>
+            <i mz-icon-mdi mz-input-prefix
+               [icon]="'mail'">
+            </i>
+            <input mz-input
+                   id="email-input"
+                   placeholder="Mots clés"
+                   type="text">
+        </mz-input-container>
+    </div>
+    <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" >
+        <button mz-button>
+            Entrer <i mz-icon
+                      [align]="'right'"
+                      [icon]="'cloud'"
+                      [size]="'medium'">
+        </i>
+        </button>
+    </div>
+</section>

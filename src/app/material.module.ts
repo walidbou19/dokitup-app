@@ -9,7 +9,8 @@ import {
     MzIconMdiModule,
     MzCardModule,
     MzCollectionModule,
-    MzValidationModule
+    MzValidationModule,
+    MzSelectModule
 } from 'ng2-materialize';
 
 @NgModule({
@@ -22,7 +23,8 @@ import {
         MzIconMdiModule,
         MzCardModule,
         MzCollectionModule,
-        MzValidationModule
+        MzValidationModule,
+        MzSelectModule
     ],
     exports: [
         MzNavbarModule,
@@ -33,7 +35,8 @@ import {
         MzIconMdiModule,
         MzCardModule,
         MzCollectionModule,
-        MzValidationModule
+        MzValidationModule,
+        MzSelectModule
     ]
 })
 export class MaterialModule {}

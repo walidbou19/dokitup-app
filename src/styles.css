@@ -7678,3 +7678,9 @@ nav a{
     max-width: 180px;
     margin: 10px auto;
 }
+
+.mdl-shadow--4dp{
+    background: white;
+    align-items: center;
+    justify-content: center;
+}

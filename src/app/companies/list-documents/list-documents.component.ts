@@ -5,22 +5,23 @@ import { Location } from '@angular/common';
 
 import { User } from '../../_models/user';
 import { Companies } from '../../_models/companies';
+import { Document } from '../../_models/document';
 import { CompaniesService } from '../shared/companies.service';
 import { BasicValidators } from '../../shared/basic-validators';
 import {ObjectRetriever} from '../../_models/objectRetriever';
 
-
 @Component({
-  selector: 'app-company-detail',
-  templateUrl: './company-detail.component.html',
-  styleUrls: ['./company-detail.component.css']
+  selector: 'app-list-documents',
+  templateUrl: './list-documents.component.html',
+  styleUrls: ['./list-documents.component.css']
 })
 
-export class CompaniesDetailComponent implements OnInit {
+export class ListDocumentsComponent implements OnInit {
 
   title: string;
   user: User;
   company: Companies;
+  document: Document;
 
 
   constructor(private companiesService: CompaniesService, private router: Router, private route: ActivatedRoute, private location: Location) {}
@@ -48,7 +49,7 @@ export class CompaniesDetailComponent implements OnInit {
                     } else {
                         this.company = foundCompanies[0];
                     }
-                    console.log(this.company.users);
+                    console.log(this.document);
                 });
             },
             error => {});
