@@ -16,6 +16,31 @@
       </div>
   </section>
 
-  <app-list-documents></app-list-documents>
+        <mz-card class=" "
+                 [hoverable]="true">
+            <mz-card-title>
+                Liste des dossiers:
+            </mz-card-title>
+            <mz-card-content>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr id="user-{{user.id}}" class="" *ngFor="let user of folders" >
+                        <td>
+                            {{user.id}}
+                        </td>
+                        <td>
+                            {{user.name}}
+                        </td>
+                        <td>
+                            <i mz-icon-mdi class="red-text waves-effect waves-light" [align]="'center'" [icon]="'delete-circle'" [size]="'24px'"  ></i>
+                        </td>
+                    </tr>
+                </table>
+            </mz-card-content>
+        </mz-card>
 
 </div>
