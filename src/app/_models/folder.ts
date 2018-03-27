@@ -11,6 +11,7 @@ export class Folder {
     public createdAt: Date;
     public updatedBy: User;
     public updatedAt: Date;
+    public static allFolders: Folder[] = [];
 
     public constructor(id: string, name: string,
                        accesses: Accesses[], docs: Document[],
@@ -24,6 +25,14 @@ export class Folder {
         this.createdAt = createdAt;
         this.updatedBy = updatedBy;
         this.updatedAt = updatedAt;
+        if (!Folder.hasItem(this))
+            Folder.allFolders.push(this);
+    }
+
+    public static hasItem(folder: Folder) {
+        for (let i=0; i < Folder.allFolders.length; i++)
+            if (Folder.allFolders[i].id == folder.id) return true;
+        return false;
     }
 
     public getDocuments() {

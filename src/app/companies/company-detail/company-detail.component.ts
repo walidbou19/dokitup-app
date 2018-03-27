@@ -4,10 +4,12 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { User } from '../../_models/user';
+import { Folder } from '../../_models/folder';
 import { Companies } from '../../_models/companies';
 import { CompaniesService } from '../shared/companies.service';
 import { BasicValidators } from '../../shared/basic-validators';
 import {ObjectRetriever} from '../../_models/objectRetriever';
+import {Accesses} from '../../_models/accesses';
 
 
 @Component({
@@ -21,6 +23,7 @@ export class CompaniesDetailComponent implements OnInit {
   title: string;
   user: User;
   company: Companies;
+  folders: Folder[] = [];
 
 
   constructor(private companiesService: CompaniesService, private router: Router, private route: ActivatedRoute, private location: Location) {}
@@ -48,7 +51,19 @@ export class CompaniesDetailComponent implements OnInit {
                     } else {
                         this.company = foundCompanies[0];
                     }
+                    //console.log(Folder.allFolders[0]);
+                    Folder.allFolders.forEach((f: Folder) => {
+                        f.accesses.forEach((a: Accesses) => {
+                            a.companies.forEach((c: Companies) => {
+                                if (this.company.id == c.id && this.folders.indexOf(f) < 0) {
+                                    this.folders.push(f);
+                                }
+                            });
+                        });
+                    });
+                    console.log(this.folders);
                     console.log(this.company.users);
+
                 });
             },
             error => {});

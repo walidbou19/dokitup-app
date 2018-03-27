@@ -32,6 +32,7 @@ export class CompaniesComponent implements OnInit {
                       }
                       console.log(this.folders);
                       this.allCompanies = Companies.allCompanies;
+                      console.log(this.allCompanies);
                       this.spinnerService.hide();
                   },
                   error => {});
